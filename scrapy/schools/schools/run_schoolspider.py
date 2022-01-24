@@ -13,7 +13,7 @@ import multiprocessing
 import os
 import execute_scrapy_from_file
 
-INPUT_FILENAME = './schools/spiders/charter_school_URLs_2019.tsv'
+INPUT_FILENAME = './schools/spiders/bay_area_police.tsv'
 
 SPLIT_PREFIX = 'split_urls'
 
