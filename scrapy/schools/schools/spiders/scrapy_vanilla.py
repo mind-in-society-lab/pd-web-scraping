@@ -217,21 +217,23 @@ class CharterSchoolSpider(CrawlSpider):
         print("get_domain: Specific:", specific_domain)
         top_level = len(specific_domain.replace("/", "")) == len(permissive_domain) # compare specific and permissive domain
         
-        if init: # Check if this is the initialization period for the Spider.
-            if top_level:
-                return permissive_domain
-            else:
-                return specific_domain
+        # if init: # Check if this is the initialization period for the Spider.
+        #     if top_level:
+        #         return permissive_domain
+        #     else:
+        #         return specific_domain
         
-        # secondary round
-        if permissive_domain in self.allowed_domains:
-            return permissive_domain
+        # # secondary round
+        # if permissive_domain in self.allowed_domains:
+        #     return permissive_domain
         
         #implement dictionary for if specific domain is used in original allowed_domains; key is specific_domain?
         
         
-        return specific_domain # use `permissive_domain` to scrape much more broadly 
-    
+        # return specific_domain 
+        # use `permissive_domain` to scrape much more broadly 
+        return permissive_domain
+
     
     def get_text(self, response):
         """
