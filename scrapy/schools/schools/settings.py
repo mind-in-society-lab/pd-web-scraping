@@ -117,7 +117,7 @@ MONGO_REPLICATION = False
 
 MONGO_REPLICA_SET = 'mongoCluster' # replica set name if used
 
-MONGO_DATABASE = 'pd-sample-1' # database (not collection) name
+MONGO_DATABASE = 'pd-sample-3' # database (not collection) name
 
 MONGO_USERNAME = 'admin' # could probably make a "schoolCrawler" user to use here instead
 

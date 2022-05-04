@@ -150,10 +150,10 @@ class CharterSchoolSpider(CrawlSpider):
         print("Domain Name: ", domain)
         print("Full URL: ", response.url)
         print("Depth: ", item['depth'])
-        item['image_urls'] = self.collect_image_URLs(response)
+        # item['image_urls'] = self.collect_image_URLs(response)
         
-        item['file_urls'], item['file_text'] = self.collect_file_URLs(domain, item, response)
-        print(item['file_urls'])
+        # item['file_urls'], item['file_text'] = self.collect_file_URLs(domain, item, response)
+        # print(item['file_urls'])
         yield item    
 
     def init_from_school_list(self, school_list):
